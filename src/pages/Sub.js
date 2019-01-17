@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Sub.scss'
 
+import Card from '../components/Card'
+
 export default class extends Component {
     render() {
 
@@ -8,7 +10,10 @@ export default class extends Component {
 
         return (
             <div className='Sub'>
-                <h1>Sub pages { no } </h1>
+                <h1>Sub pages </h1>
+
+                <Card no={ no } />
+
             </div>
         )
     }
