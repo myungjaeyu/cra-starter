@@ -5,22 +5,29 @@ import './App.scss'
 import Main from './pages/Main'
 import Sub from './pages/Sub'
 
+import { Subscribe } from 'unstated'
+import { AppContainer } from './providers/containers'
+
 class App extends Component {
     render() {
         return (
-            <div className='App'>
+            <Subscribe to={[ AppContainer ]}>
+            { (app) => (
+                <div className='App'>
 
-                <span className='App__Title'>
-                    cra-starter
-                </span>
+                    <span className='App__Title' onClick={ _ => app.setTitle('fast-cra-starter')}>
+                        { app.state.title }
+                    </span>
 
-                <Switch>
-                    <Route exact path='/' component={ Main } />
-                    <Route exact path='/sub/:no' component={ Sub } />
-                    <Redirect to='/'/>
-                </Switch>
+                    <Switch>
+                        <Route exact path='/' component={ Main } />
+                        <Route exact path='/sub/:no' component={ Sub } />
+                        <Redirect to='/'/>
+                    </Switch>
 
-            </div>
+                </div>
+            ) }
+            </Subscribe>
         )
     }
 }

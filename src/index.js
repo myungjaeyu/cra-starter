@@ -4,11 +4,14 @@ import './index.scss'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { HashRouter } from 'react-router-dom'
+import { Provider } from 'unstated'
 
 ReactDOM.render(
-    <HashRouter>
-        <App />
-    </HashRouter>
+    <Provider>
+        <HashRouter>
+            <App />
+        </HashRouter>
+    </Provider>
 , document.getElementById('root'))
 
 serviceWorker.unregister()
