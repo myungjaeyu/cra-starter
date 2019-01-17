@@ -15,8 +15,9 @@ class App extends Component {
             { (app) => (
                 <div className='App'>
 
-                    <span className='App__Title' onClick={ _ => app.setTitle('fast-cra-starter')}>
-                        { app.state.title }
+                    <span className='App__Title' onClick={ _ => app.setTitle('fast-cra-starter')
+                                                                    .then(_ => app.setPayloadContent('immutability-helper')) }>
+                        { app.state.title } - { app.state.payload.content }
                     </span>
 
                     <Switch>
