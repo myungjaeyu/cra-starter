@@ -63,6 +63,7 @@ fast-cra-starter/
 - [jest](https://github.com/facebook/jest)
 - [enzyme](https://github.com/airbnb/enzyme)
 - [serve](https://github.com/zeit/serve)
+- [json-server](https://github.com/typicode/json-server)
 
 ## License
 [MIT](LICENSE)
