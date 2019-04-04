@@ -62,6 +62,7 @@ fast-cra-starter/
 - [axios](https://github.com/axios/axios)
 - [jest](https://github.com/facebook/jest)
 - [enzyme](https://github.com/airbnb/enzyme)
+- [serve](https://github.com/zeit/serve)
 
 ## License
 [MIT](LICENSE)
