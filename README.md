@@ -16,7 +16,8 @@ $ npm run test
 fast-cra-starter/
 ├── src/
 │   ├── __tests__/
-│   │   └── api.test.js 
+│   │   ├── api.test.js 
+│   │   └── app.container.test.js 
 │   │
 │   ├── components/
 │   │   ├── Card.js
